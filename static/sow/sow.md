@@ -82,3 +82,6 @@ Version 1.1
 20. Address Update
 22. Online Payment, Cash on Delivery Mode, Wallet Money
 23. Profile (Edit/Update Profile, Show Edit or Update Address, Add Address, Past Bookings With Invoice, Ratings, Wallet Money)
+
+
+https://miro.com/app/board/uXjVK3oDE3E=/
