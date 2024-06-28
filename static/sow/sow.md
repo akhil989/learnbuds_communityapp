@@ -4,84 +4,93 @@
 # CommunityApplication
 
 
-### SCOPE OF WORK
-2024
-Version 1.1 
+# Scope of Work (SOW)
+## Dating Cum Matrimony App (2024)
 
-### Deliverables:
-1. Web Application
-2. Dating Application
-3. Admin Login
-4. Source Code
-5. Server
+### Deliverables
+1. **Web Application**
+2. **Admin Panel**
+3. **User Application**
+4. **Source Code**
+5. **Server Deployment**
 
-### Technology:
-- Web Application Frontend: React
-- Backend: Python
+### Technology Stack
+1. **Frontend**: React
+2. **Backend**: Python (Django/Flask)
 
-### Additional Features:
-- Payment Integration
+### Admin Panel Features
 
-## ADMIN PANEL
+#### 1. Dashboard
+- **Total Users**: Display the total number of users.
+- **User Services**: Manage services offered to users.
+- **Dating App Users**: Show the number of users specifically using the dating features.
+- **Subscription**: Manage user subscriptions.
+- **Total Revenue**: Display total revenue generated.
 
-### 1. Highly Enhanced Dashboard:
-- Display total income
-- Show total Users/Customer
-- Display all Products
-- Show all Services
-- Total Revenue
-- Booking overview (Daily/Monthly/Yearly), Report Downloadable
+#### 2. Dating Management
+- **Create Dating Accounts**: Create new dating accounts.
+- **User List**: Display a list of all users.
+- **Search Accounts**: Search for accounts by name.
+- **User Details**: View user details including age, date of birth, location, and qualification.
+- **Account Information**: Manage usernames and passwords.
+- **Reviews and Ratings**: Manage user reviews and ratings.
 
-### 2. Dating App Management:
-- Create an account
-- Show All dating accounts
-- Search by users name
-- Account Details (Name, Image, Latitude, Longitude, Address, Mobile Number, Email, Registration details)
-- Account Active or Inactive, Editable
-- Username, Password
-- Payment Details
-- Service Activation/Deactivation Option
+#### 3. Rating Management
+- **Customer Details**: Display customer name and user ID.
+- **App Ratings**: Manage ratings for the dating app.
 
-### 6. Users Management:
-- Search by email address, Phone number, Or Name-wise
-- User ID, name, Email, Phone Number, Total bookings
-- User active/inactive
-- Action: view
-- message blocked or reported
+#### 4. User Management
+- **Search Filters**: Search users by age, location, qualification, and designation.
+- **Registration**: Sign up users with name, phone, email, and social login options.
+- **Message Management**: Manage blocked or reported messages.
+- **User Analytics**: Analyze user data.
+- **Account Management**: Manage user accounts.
+- **Subscription Management**: Manage user subscriptions.
+- **User Status**: Activate or deactivate user accounts.
 
-### 8. Banner Management:
-- Status: Active/Inactive
-- Action: view, edit, banner order
+#### 5. Notification Features
+- **Send Notifications**: Send notifications to all users.
+- **Request Acceptance**: Manage acceptance of requests.
+- **Reporting**: Handle user reports.
 
-### 9. Notifications Feature:
-- Send customer Notifications to reported accountes
-- Send Notifications based on order status change
-- Notification for updated profiles
-- Payment status notification
+#### 6. Reporting
+- **Generate Reports**: Create daily, monthly, and yearly reports with sorting and filtering options.
+- **Subscription Reports**: Generate subscription-specific reports.
+- **Report Options**: Preview or print reports.
 
-### 10. Generate Reports:
-- Daily/Monthly/Yearly report sorting/Filtering
-- Revenue report
+#### 7. Customer Chat Option
+- **Chat Management**: Manage chat options for customer support.
 
-### 16. User chat option
+#### 8. Admin Logout
+- **Logout**: Securely log out from the admin panel.
 
-### 17. Admin Logout
+### User Web Application Features
 
-## User Web & Mobile Application:
-1. Splash Screen
-2. User Registration/ Login
-3. OTP Verification View
-4. Forget Password Request
-5. Set A New Password
-6. Service Lists
-7. Product List with Filter By Alphabets Showing Each Service Price
-8. Banner Display
-9. Show All Notifications
-10. Chat with Users
-11. Show Service
-20. Address Update
-22. Online Payment, Cash on Delivery Mode, Wallet Money
-23. Profile (Edit/Update Profile, Show Edit or Update Address, Add Address, Past Bookings With Invoice, Ratings, Wallet Money)
+1. **Splash Screen**: Display a splash screen on app launch.
+2. **User Registration/Login**: Allow users to register and log in.
+3. **OTP Verification**: Verify user identity with OTP.
+4. **Forgot Password**: Allow users to request a password reset.
+5. **Set New Password**: Enable users to set a new password.
+6. **User List**: Display a list of users.
+7. **Services List**: Show services sent, requested, or rejected.
+8. **Filtered User List**: Filter users by various criteria.
+9. **Profile Matching**: Match profiles based on preferences.
+10. **Banner Display**: Show promotional banners.
+11. **Location Services**: Manage location-based features.
+12. **Chat Options**: Provide chat functionality.
+13. **User Chat**: Enable chatting with other users.
+14. **Interaction Options**: Send, request, accept, reject, or hide users.
+15. **Online Subscription**: Manage online subscriptions.
+16. **Profile Management**: Edit or add reels and photos to profiles.
+
+### Accounts Admin Panel Features
+
+- **Payment Management**: Manage payments from users.
+
+---
+
+This revised SOW provides a clear and structured overview of the features and functionalities for both the admin panel and the user web application, along with the technology stack and deliverables.
+
 
 
 https://miro.com/app/board/uXjVK3oDE3E=/
