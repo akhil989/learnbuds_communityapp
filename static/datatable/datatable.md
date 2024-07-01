@@ -184,8 +184,51 @@ class Category(models.Model):
 | Designation     | VARCHAR   | 45     | Designation of the employee/employer |
 | Location        | VARCHAR   | 45     | Location of the employee/employer |
 
+
+
+### 10. JOB SEEKER
+
+Here's a tabular representation of the `JobSeeker` model details:
+
+| Field                | Data Type         | Length  | Description                                      |
+|----------------------|-------------------|---------|--------------------------------------------------|
+| name                 | ForeignKey        |         | Links to the `Signup` model                      |
+| job_title            | CharField         | 45      | Title of the job the user is looking for         |
+| skills               | TextField         |         | User's skills                                    |
+| location_preference  | CharField         | 100     | Preferred job location                           |
+| salary_preference    | CharField         | 45      | Preferred salary                                 |
+| cv_file              | FileField         |         | Upload user's CV                                 |
+| company_name         | CharField         | 45      | Previous company's name                          |
+| designation          | CharField         | 45      | User's designation at the previous company       |
+| last_working_date    | DateField         |         | Last working date of the user                    |
+| last_withdrawn_salary| CharField         | 45      | Last salary withdrawn by the user                |
+| reason_for_quit      | TextField         |         | Reason for quitting the last job                 |
+
+Here is the model in Django:
+
 ```python
-class EmployeeEmployer(models.Model):
-    category = models.ForeignKey(Category, on_delete=models.CASCADE)
-    category_name = models.CharField(max_length=11)
-    user_id
+from django.db import models
+
+class Signup(models.Model):
+    login_id = models.AutoField(primary_key=True)
+    username = models.CharField(max_length=45)
+    u_id = models.IntegerField()
+    email = models.EmailField(max_length=25)
+    phone = models.BigIntegerField()
+
+class JobSeeker(models.Model):
+    name = models.ForeignKey(Signup, on_delete=models.CASCADE)
+    job_title = models.CharField(max_length=45)
+    skills = models.TextField()
+    location_preference = models.CharField(max_length=100)
+    salary_preference = models.CharField(max_length=45)
+    cv_file = models.FileField(upload_to='cv/')
+    company_name = models.CharField(max_length=45)
+    designation = models.CharField(max_length=45)
+    last_working_date = models.DateField()
+    last_withdrawn_salary = models.CharField(max_length=45)
+    reason_for_quit = models.TextField()
+
+    def __str__(self):
+        return self.name.username
+```
